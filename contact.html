@@ -1,0 +1,53 @@
+{% extends 'default.html' %}
+
+{% block content %}
+
+<script type="text/javascript">
+	{
+		var s={{a}};
+		if (s==0)
+		{
+			alert("Thank You for Contacting Us\n We Will Connect with You Shortly");
+		}
+		if (s==1)
+		{
+			alert("Email/Mobile Already Exists");
+		}
+	}
+	
+</script>
+
+<section>
+	<div class="mt-[20px]">
+		<img class="w-full h-[600px] opacity-40" src="https://img.freepik.com/premium-vector/gold-halftone-world-map_48799-491.jpg?w=996">
+		<div class="flex mt-[40px] absolute top-[50px] left-[450px]">
+			<div><img src="https://whiltor.com/assets/img/img22/img22NoShadowNoBg.png"></div>
+			<div class="w-[500px] h-[610px] border-2 bg-gray-50 rounded-lg mt-[30px]">
+				<div class="text-3xl text-center mt-[30px]">Contact US</div>
+				<form name="f1" action="/mainapp/contactinformation">
+					<div class="text-2xl ml-[60px] mt-[40px] flex gap-4">
+						<div class="w-[50px] h-[50px]"><img class="rounded-full hover:opacity-40" src="https://avatars.githubusercontent.com/u/5795681?s=200&v=4"></div>
+						<div><input class=" rounded-lg pl-[10px] border-b-2 border-slate-400 w-[300px]" type="text" name="name" placeholder="Full Name"></div>
+					</div>
+					<div class="text-2xl ml-[60px] mt-[40px] flex gap-4">
+						<div class="w-[50px] h-[50px]"><img class=" rounded-full hover:opacity-40" src="https://images.freeimages.com/fic/images/icons/2794/metro_ui/512/google_tasks.png"></div>
+						<div><input class=" rounded-lg pl-[10px] border-b-2 border-slate-400 w-[300px]" type="email" name="email" placeholder="Email"></div>
+					</div>
+					<div class="text-2xl ml-[60px] mt-[40px] flex gap-4">
+						<div class="w-[50px] h-[50px]"><img class=" rounded-full hover:opacity-40" src="https://shoecovermagic.com/wp-content/uploads/2019/07/Phone-175x175.png"></div>
+						<div><input class=" rounded-lg pl-[10px] border-b-2 border-slate-400 w-[300px]" type="text" name="contact" placeholder="Contact Number"></div>
+					</div>
+					<div class="text-2xl ml-[60px] mt-[40px] flex gap-4">
+						<div class="w-[50px] h-[50px]"><img class=" rounded-full hover:opacity-40" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_772c03b8961daeabcf0122520657fa38/e-shot.jpg"></div>
+						<div><textarea class="pl-[10px] h-[150px] w-[300px] border-b-2 border-slate-400" name="query" placeholder="Query"></textarea></div>
+					</div>
+					<div class="text-center"><input type="submit" class="w-[300px] h-[40px] text-2xl bg-yellow-400 my-[10px] rounded-lg text-white font-bold"></div> 
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+{% endblock %}

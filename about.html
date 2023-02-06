@@ -1,0 +1,72 @@
+{% extends 'default.html' %}
+
+{% block content %}
+
+<section class="mt-[60px]">
+		<div class="grid grid-cols-2 gap-2 justify-items-center ml-[50px]">
+			<div class="p-[100px]">
+				{% for i in w %}
+				<div class="text-[40px] justify-items-center text-[40px]">{{i.mainhead}}</div>
+				<div class="py-3">
+					{{i.descr}}
+				</div>
+				{% endfor %}
+				<div class="py-3">
+					<button>Get Started </button>
+				</div>
+			</div>
+			<div class="w-full h-[500px] pt-[40px]">
+				<img src="https://whiltor.com/assets/img/about-us-landing.png" class="">
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="grid grid-cols-3 ml-[30px] mt-[90px]">
+			{% for i in tc1 %}
+			<div class="flex p-[30px] border-2 border-white bg-slate-100">
+				<div><img src="https://whiltor.com/assets/img/service-1.png"></div>
+				<div class="ml-4"> 
+					<div class="text-2xl">{{i.mainhead}}</div>
+					<div class="w-[300px]  mt-4">{{i.descr}}</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+
+
+	<section class="mt-40">
+		{% for i in wwd %}
+	    <div class="text-center"><p><font class="text-4xl">{{i.mainhead}}</font></p>
+	    	<div class="text-center  mt-4"><p><font class="text-xl">{{i.subhead}}</font></p>
+		</div>
+		<div class="flex justify-evenly mt-20 ">
+			    <div class="w-80 -translate-y-8"><img src="https://whiltor.com/assets/img/business-3d-brilliant-idea-1.png"></div>
+			    <div class="w-7/12"><p class="text-lg">{{i.descr}}</p>
+			    	{% endfor %}
+
+			    <div class="grid grid-cols-3 justify-evenly mt-10">
+			    	{% for i in tlo %}
+			    	<div class="w-28 h-28"><img src="https://assets.website-files.com/62cfba72db1488053863b094/62ece08c08e2d8650a2c9f38_Black-computer-display-outline.gif"><p>{{i.mainhead}}</p></div>
+			    	{% endfor %}
+			    </div>
+		    </div>
+	  	</div>
+	</section>
+
+	<section class="mt-60">
+		<div class="text-center"><p><font class="text-4xl">Our Values</font></p>
+			<div class="grid grid-cols-3 justify-items-center w-10/12 ml-[100px] mt-[240px]">
+				{% for i in v %}
+			<div class="w-[350px] p-6 rounded-lg bg-white shadow-2xl hover:shadow">
+				<div class="mt-[-160px] ml-[80px] w-[150px]"><img src="https://whiltor.com/assets/img/girl-1.png"></div>
+				<div class="text-2xl mt-[20px]">{{i.mainhead}}</div>
+				<div>{{i.descr}}</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+
+{% endblock %}

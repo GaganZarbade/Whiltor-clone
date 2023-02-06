@@ -1,0 +1,190 @@
+{% extends 'default.html' %}
+
+{% block content %}
+
+	<section>
+		
+	</section>
+
+	<section>
+		<div class="grid grid-cols-3 gap-20 my-16 px-16">
+			{% for i in cs %}
+        <div class="rounded-2xl bg-white drop-shadow-2xl text-gray-700" style="box-shadow:0px 5px  rgb(225, 225, 76);">
+            <div class=" w-[70px] h-[50px] float-right mr-5 translate-y-[-20px] bg-[#e1e14c]/50 rounded-lg">
+				<i class=" fa-sharp fa-solid fa-gears text-3xl text-white ml-4 pt-2"></i></div>
+            <h1 class="text-3xl py-5 px-5">{{i.mainhead1}}</h1>
+            <p class="pb-5 px-5">{{i.descr1}}</p>
+
+        </div>
+        <div class="rounded-2xl bg-white drop-shadow-2xl text-gray-700" style="box-shadow:0px 5px  rgb(60, 221, 230);">
+            <div class=" w-[70px] h-[50px] float-right mr-5 translate-y-[-20px] bg-[#3cdde6]/50 rounded-lg">
+				<i class=" fa-solid fa-pen-nib text-3xl text-white ml-4 pl-1 pt-2"></i></div>
+            <h1 class="text-3xl py-5 px-5">{{i.mainhead2}}</h1>
+            <p class="pb-5 px-5">{{i.descr2}}</p> 
+        </div>
+        <div class="rounded-2xl bg-white drop-shadow-2xl text-gray-700" style="box-shadow:0px 5px  rgb(226, 131, 54);">
+            <div class=" w-[70px] h-[50px] float-right mr-5 translate-y-[-20px] bg-[#e28336]/50 rounded-lg">
+				<i class=" fa-solid fa-headphones text-3xl text-white ml-4 pl-1 pt-2"></i></div>
+            
+            <h1 class="text-3xl py-5 px-5">{{i.mainhead3}}</h1>
+            <p class="pb-5 px-5 ">{{i.descr3}}</p>
+        </div>
+        {% endfor %}
+    </div>
+	</section>
+
+	<section class="mt-12">
+		{% for i in u %}
+		<div class="border-2 rounded-lg border-yellow-400 bg-white pt-8 pb-8">
+			<div class="container text-center h- py-5">
+		        <h1 class="text-3xl">{{i.mainhead}}</h1>
+		        <p class="mt-5">{{i.subhead}}.</p>
+		    </div>
+		    <div class="grid grid-cols-2">
+		        <div class="">
+		            <img src="https://whiltor.com/assets/img/img1/img1NoShadowNoBg.png" class="w-[350px] float-right mr-20" style="">
+
+		        </div>
+		        <div class=""> 
+		            <p class="leading-8 mt-10">{{i.descr}}</p>
+		            <div></div>
+		            <div></div>
+		            <div></div>
+		        </div>
+		    </div>
+	    </div>
+	    {% endfor %}
+    </section>
+
+    <section>
+    	<div class="h-20 my-20 text-center">
+        <h1 class="text-3xl">What we do?</h1>
+        <p class="mt-5">Our Artificial Intelligence powered tools use millions of project data</p>
+    </div>
+    <div class=" container flex px-16 w-[1100px] h-[260px] ml-[240px]  pt-[35px] overflow-hidden">
+
+        <div class="w-[200px] h-[200px] rounded-full border-2 border-yellow-400 bg-yellow-400 hover:-translate-y-8 ease-in-out duration-300 hover:mr-[200px]">
+        	<div class="w-[60px] absolute  ml-[65px] mt-[65px]"><img src="https://img.freepik.com/premium-vector/yellow-gear-wheel-cogwheel-d-vector-illustration_92753-5159.jpg?w=740"></div>
+        	<div class="w-[120px] h-[120px] bg-white rounded-full ml-[35px] mt-[35px]"></div>
+           <div class="w-[50px] h-[50px] bg-yellow-400 rotate-45 ml-[70px] mt-[10px]"></div>
+           <div class="w-[200px] h-[30px] bg-yellow-400 mt-[10px] text-center text-white">Product Devlopment</div>
+        </div>
+       
+        <div class="w-[200px] h-[200px] rounded-full border-2 border-blue-400 bg-blue-400 ml-[-60px] hover:-translate-y-8 ease-in-out duration-300 hover:mr-[100px] ">
+        	<div class="w-[60px] absolute  ml-[70px] mt-[65px]"><img src="https://static.wikia.nocookie.net/official-scrap-2/images/b/b9/Scrapcollector_autoclicker.png/revision/latest/scale-to-width-down/50?cb=20190619150730"></div>
+            <div class="w-[120px] h-[120px] bg-white rounded-full ml-[35px] mt-[35px]"></div>
+            <div class="w-[50px] h-[50px] bg-blue-400 rotate-45 ml-[70px] mt-[10px]"></div>
+           <div class="w-[200px] h-[30px] bg-blue-400 text-center text-white mt-[10px]">branding</div>
+        </div>
+        <div class="w-[200px] h-[200px] rounded-full border-2 border-red-400 bg-red-400 ml-[-60px] hover:-translate-y-8 ease-in-out duration-300 hover:mr-[100px]">
+        	<div class="w-[70px] absolute  ml-[60px] mt-[65px]"><img src="https://www.hdfcergo.com/images/default-source/pmfby/other-icon.png"></div>
+            <div class="w-[120px] h-[120px] bg-white rounded-full ml-[35px] mt-[35px]"></div>
+            <div class="w-[50px] h-[50px] bg-red-400 rotate-45 ml-[70px] mt-[10px]"></div>
+           <div class="w-[200px] h-[30px] bg-red-400 mt-[10px] text-center text-white">Designing</div>
+        </div>
+        <div class="w-[200px] h-[200px] rounded-full border-2 border-black bg-black ml-[-60px] hover:-translate-y-8 ease-in-out duration-300 hover:mr-[100px]">
+        	<div class="w-[60px] absolute  ml-[65px] mt-[65px]"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828503.png"></div>
+            <div class="w-[120px] h-[120px] bg-white rounded-full ml-[35px] mt-[36px]"></div>
+            <div class="w-[50px] h-[50px] bg-black rotate-45 ml-[70px] mt-[9px]"></div>
+           <div class="w-[200px] h-[30px] bg-black mt-[10px] text-center text-white">Human Resource</div>
+        </div>
+        <div class="w-[200px] h-[200px] rounded-full border-2 border-green-400 bg-green-400 ml-[-60px] hover:-translate-y-8 ease-in-out duration-300 ">
+        	<div class="w-[70px] absolute  ml-[60px] mt-[60px]"><img src="https://www.valliant.com/wp-content/uploads/2020/10/MoneyHand.png"></div>
+            <div class="w-[120px] h-[120px] bg-white rounded-full ml-[35px] mt-[35px]"></div>
+            <div class="w-[50px] h-[50px] bg-green-400 rotate-45 ml-[70px] mt-[10px]"></div>
+           <div class="w-[200px] h-[30px] bg-green-400 mt-[10px] text-center text-white">Marketing</div>
+        </div> 
+    </div>
+    </section>
+
+
+
+    <section class="mt-[300px]">
+    	<div class="grid grid-cols-2 gap-20 px-32 mt-32 justify-items-center">
+    		{% for i in tc %}
+	        <div class=" bg-white w-[350px] py-5 rounded-2xl drop-shadow-2xl">
+	            <img src="https://whiltor.com/assets/img/3d-girl.png" class="w-24 translate-y-[-100px] m-auto">
+	            <h1 class="px-10 text-gray-600 text-3xl mt-[-100px] pt-5">{{i.mainhead}}</h1>
+	            <p class="px-10 text-gray-600 py-10">{{i.descr}}</p>
+	        </div>
+	        {% endfor %}
+    	</div>
+
+	    <div class="grid grid-cols-3 gap-20 px-32 mt-32 justify-items-center">
+	    	{% for i in thc %}
+	        <div class=" bg-white w-[350px] py-5 rounded-2xl drop-shadow-2xl">
+	            <img src="https://whiltor.com/assets/img/business-3d-well-done.png" class="w-36 translate-y-[-100px] m-auto">
+	            <h1 class="px-10 text-gray-600 text-3xl mt-[-100px] pt-5">{{i.mainhead}}</h1>
+	            <p class="px-10 text-gray-600 py-10">{{i.descr}}</p>
+	        </div>
+	        {% endfor %}
+	    </div>
+
+    </section>
+
+	<section class="mt-[300px]">
+		<div>
+			<div class="flex">
+				<div class="w-[450px] h-[270px] mt-[20px] mr-[-30px]  bg-white">
+					<div class="text-[90px] ml-[400px]">1</div>
+					<div class="text-2xl w-[250px] ml-[200px]">Want to start your own business but lack the necessary team, skills, or resources?</div>
+				</div>
+				<div class="w-[450px] border-b-2 border-l-2 rounded-bl-[50px] overflow-hidden"><img class="ml-[50px]" src="https://whiltor.com/assets/img/timeline-1.png"></div>
+				<div class="w-[450px]"></div>
+			</div>
+			<div class="flex">
+				<div class="w-[450px]"></div>
+				<div class="w-[450px] ml-[135px] mt-[-2px] border-r-2 border-b-2 border-t-2 rounded-tr-[50px] rounded-br-[50px]"><img class="ml-[-80px]" src="https://whiltor.com/assets/img/timeline-1.png"></div>
+				<div class="w-[450px] ml-[-20px] h-[250px] mt-[45px] bg-white">
+					<div class="text-[80px] text-left">2</div>
+					<div class="text-2xl w-[250px]">Don't worry! You are at the right place. Whiltor will assist you.</div>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="w-[450px] border-2"></div>
+				<div class="w-[450px] border-t-2 border-l-2 border-b-2"></div>
+				<div class="w-[450px] border-2"></div>
+			</div>
+			<div class="flex">
+				<div class="w-[450px]"></div>
+				<div class="w-[450px]"></div>
+				<div class="w-[450px]"></div>
+			</div>
+			<div class="flex">
+				<div class="w-[450px]"></div>
+				<div class="w-[450px]"></div>
+				<div class="w-[450px]"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mt-[200px]">
+		{% for i in prc %}
+		<div>
+			<div class="text-3xl text-center">{{i.mainhead}}</div>
+			<div class="text-xl text-center mt-[10px]">{{i.descr}}</div>
+		</div>
+		{% endfor %}
+	</section>
+
+	<section class="mt-8">
+		
+		<div class="w-56 ml-[580px] translate-y-20"><img  class="a" src="https://whiltor.com/assets/img/book-service.png"></div>
+		{% for i in r1 %}
+		<div class="w-5/6 h-[320px] p-12 flex bg-white rounded-lg ml-32 bg-white shadow-2xl ease-in-out duration-300 hover:shadow-xl">
+			<div class="w-full text-xl w-[700px]">
+				<div class="ml-40 text-3xl">{{i.mainhead}}</div>
+				<div class=" mt-4">
+					{{i.descr}}
+				</div>
+			</div>
+			<div>
+				<div class="border-2 p-2 w-40 rounded-3xl font-bold bg-zinc-300 text-white text-xl translate-x-10 translate-y-10"><center>9999999999</center></div>
+				<button class="border-2 p-2 w-40 rounded-3xl font-bold bg-slate-900 text-white text-xl translate-x-10 -translate-y-2 hover:-translate-x-24 ease-in-out duration-300">Call Us</button>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	{% endblock %}
+

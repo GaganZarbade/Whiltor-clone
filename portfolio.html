@@ -1,0 +1,175 @@
+{% extends 'default.html' %}
+
+{% block content %}
+{% load static %}
+        <!------------------------section 1---------------------------->
+        <section class="mt-20">
+        	<div class="grid grid-cols-2 mt-10">
+            <div class=" p-10">
+                {% for i in pl %}
+                <h1 class="text-5xl font-semibold text-gray-600 pl-20" >{{i.mainhead}}</h1>
+                <p class="pl-20 text-xl mb-20 mt-4">{{i.descr}}</p>
+                {% endfor %}
+                <div class="ml-[50px]">
+                    {% for i in cl %}
+                    <div class="w-28 h-48 rounded-xl text-center p-2 float-left ml-16 bg-gray-50" style="box-shadow: 0px 3px 1px yellow;">
+                        <i class="fa-solid fa-gears text-2xl text-yellow-400"></i>
+                        <hr class="">
+                        <p class="text-sm text-gray-800">{{i.card}}</p>
+                    </div>
+                    {% endfor %}
+                  </div>  
+            </div>
+            <div class="">
+                <img src="{% static 'assets/images/img33.png' %}" class="w-[500px] mx-auto mt-5">
+
+            </div>
+        </div>
+        </section>
+        <!---------------------section 2---------------------->
+        <section class="mt-60">
+            {% for i in ce %}
+            <div>
+                <h1 class="text-3xl font-semibold text-center my-20">{{i.mainhead}}</h1>
+            </div>
+            <div class="grid grid-cols-3">
+                <div class="">
+                    <img src="{% static 'assets/images/img34.png' %}" class="w-[200px] float-right">
+                </div>
+                <div class="col-span-2 " >
+                    <p class="text-gray-500 p-20 pr-36 leading-[30px]">{{i.descr}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <!-----------------section 3-------------------->
+  		<section class="mt-60">
+  			      <div class="container h-[450px] my-20 " style="transform: rotate(-0deg);background-color:rgba(40,81,164,0.8);width: 100%;">
+          <img class="w-full h-full opacity-[0.4]" src="{% static 'assets/images/img35.jpg' %}" style="position: absolute;">
+          <img src="{% static 'assets/images/img1.png' %}" class="w-[300px] " style="position: absolute; margin-left: 37%; margin-top: 10%;">
+          <button class="bg-yellow-400 w-28 h-12 rounded-2xl" style="position: absolute; margin-left: 45%; margin-top: 20%;">Get started</button>      
+        </div>
+    	</section>
+        <!-----------section 4------------>
+        <section class="mt-60">
+        <div class="text-center my-16">
+            <h1 class="text-3xl font-semibold">LET'S MAKE A DIFFERENCE TOGETHER.</h1>
+            <p class="mt-2 text-gray-600">We at Whiltor help you turn your idea into a product.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-16 px-10 text-center mt-[150px]">
+            {% for i in dt %}
+            <div class="bg-white  px-16 h-[300px]">
+                <img src="{% static 'assets/images/img36.png' %}" class="w-[200px] mx-auto mt-[-120px]">
+                <h1 class="text-3xl">{{i.mainhead}}</h1>
+                <p  class="mt-5">{{i.descr}}</p>   
+            </div>
+            {% endfor %}
+
+        </div>
+  		</section>
+        <!-------------section 5----------------->
+        <section class="mt-60">
+        	<div class="h-[600px] border-0 border-black ">
+            
+            <img src="{% static 'assets/images/img39.png' %}" alt="">
+                <div class="bg-[#19334d] ">
+                    <h1 class="text-3xl font-semibold  ml-16 text-white pt-10">Why Us ?</h1>
+                    <h1 class="bg-red-100 text-xl mt-10 w-[450px] h-10 ml-16 px-5">
+                        <span class="text-red-700 font-bold">01</span> Available everytime and in every situation
+                    </h1>
+                    <h1 class="bg-red-100 text-xl mt-5 w-[450px] h-10 ml-16 px-5">
+                        <span class="text-red-700 font-bold">02</span> We Offer Technical Solutions
+                    </h1>
+                    <h1 class="bg-red-100 text-xl mt-5 w-[450px] h-16 ml-16 px-5 ">
+                        <span class="text-red-700 font-bold">03</span> Expert Insights with a High Chance of Success
+                    </h1>
+                    <h1 class="pt-12">
+
+                    </h1>
+
+                </div>
+            <img src="{% static 'assets/images/img40.png' %}" class="">
+            
+        </div>
+        </section>
+        <!-------------------------section 6----------------------------->
+        <section class="mt-60">
+        	<div class="grid grid-cols-3 px-10">
+            <div class="col-span-2  px-24 py-20">
+                {% for i in ap %}
+                <h1 class="text-4xl font-semibold">{{i.mainhead}}</h1>
+                <h2 class="mt-10 text-gray-600">
+                    {{i.descr}}
+                </h2>
+                {% endfor %}
+                <button class="mt-10 w-28 h-10 rounded-xl border-2 border-black hover:bg-yellow-500 hover:border-yellow-500 hover:text-white">Contact Us</button>
+            </div>
+            <div class="  ">
+                <img src="{% static 'assets/images/img41.png' %}"  >
+            </div>
+        </div>
+        </section>
+        <!----------------------section-7------------------------>
+        <section class="mt-60">
+        	<div class=" text-center my-10">
+            	<h1 class="font-bold text-3xl">Our Services</h1>
+            	<p class="text-gray-600 mt-5">Whiltor offers a wide range of services to assist you in establishing your brand in the market</p>
+        	</div>
+        <div class="grid grid-cols-3 px-16 gap-10">
+            <div class="">
+                <div class=" bg-white rounded-2xl h-[230px] py-10 my-20 drop-shadow-2xl" style="box-shadow: 0px -4px cyan;">
+                    <h1 class="text-2xl pl-10">Branding</h1>
+                    <p class="px-10 mt-5 text-gray-800">We work with to develop a unique brand identity through effective brand strategy and brand marketing.</p>
+                </div>
+
+            </div>
+            <div class=" grid-rows-2">
+                <div class="bg-white rounded-2xl py-10 drop-shadow-2xl " style="box-shadow: 0px -4px rgb(237, 17, 149);">
+                    <h1 class="text-2xl pl-10">Consultancy</h1>
+                    <p class="px-10 mt-5 text-gray-800">We provide free consultation and proactive solutions to assure the growth and effectiveness of your vision.</p>
+
+                </div>
+                <div class=" bg-white rounded-2xl py-10 mt-16 drop-shadow-2xl" style="box-shadow: 0px -4px rgb(251, 255, 0);">
+                    <h1 class="text-2xl pl-10">Planning</h1>
+                    <p class="px-10 mt-5 text-gray-800">With our experienced analysis, we provide with innovative strategic ideas to help you grow your brand.</p>
+
+                </div>
+
+
+            </div>
+            <div class=" bg-white rounded-2xl py-10 my-20 h-[230px] drop-shadow-2xl" style="box-shadow: 0px -4px rgb(191, 0, 255);">
+                <h1 class="text-2xl pl-10">Product Development</h1>
+                <p class="px-10 mt-5 text-gray-800">We provide a wide range of product development services, including websites and software, all with cutting-edge technology.</p>
+            </div>
+        </div>
+        </section>
+        <!------------------------------section-8---------------------->
+        <div class="mt-20 text-center ">
+            {% for i in sp %}
+            <h1 class="text-3xl">{{i.mainhead}}</h1>
+            <h2 class="text-xl">{{i.subhead}}</h2>
+        </div>
+        <div class="grid grid-cols-3">
+            <div class="">
+                <img src="{% static 'assets/images/img42.png' %}" class="w-[350px] float-right" >
+            </div>
+            <div class="col-span-2 pl-20 pr-40 ">
+                <h1 class="h-12 bg-white mt-16 py-2 px-5 rounded-xl drop-shadow-xl">
+                    
+                    <p><i class="fa-solid fa-robot text-2xl text-gray-700"></i>{{i.descr1}}</p>
+                </h1>
+                <h1 class=" h-12 bg-white mt-10 py-2 px-5 rounded-xl drop-shadow-xl">
+                 
+                    <p class="">   <i class="fa-solid fa-users text-2xl text-gray-700"></i>{{i.descr2}}</p>
+                </h1>
+                <h1 class="h-12 bg-white mt-10 py-2 px-5 rounded-xl drop-shadow-xl">
+                   
+                    <p>  <i class="fa-solid fa-business-time text-2xl text-gray-700"></i>{{i.descr3}}</p>
+                </h1>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
